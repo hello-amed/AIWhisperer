@@ -1,10 +1,10 @@
 import os
 import sys
 
-# 1. FORCE UTF-8 ENCODING (Fixes the Unicode/ASCII error)
+# 1. FORCE UTF-8 ENCODING 
 os.environ["LC_ALL"] = "en_US.UTF-8"
 os.environ["LANG"] = "en_US.UTF-8"
-# 2. ENSURE FFMPEG IS ON PATH (Fixes FFmpeg not found error)
+# 2. ENSURE FFMPEG IS ON PATH 
 os.environ["PATH"] += os.pathsep + "/opt/homebrew/bin"
 
 import rumps
